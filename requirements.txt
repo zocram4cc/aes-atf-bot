@@ -1,0 +1,8 @@
+opencv-python
+numpy
+Pillow
+obs-websocket-py
+easyocr
+PyYAML
+vgamepad
+psutil

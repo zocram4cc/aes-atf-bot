@@ -1,0 +1,70 @@
+version: pes15
+obs:
+  host: localhost
+  port: 4455
+  password: ''
+ocr_corrections:
+  character_equivalences:
+    '4':
+    - g
+    - l
+    - k
+    's':
+    - '5'
+    'o':
+    - '0'
+    'i':
+    - '1'
+    - l
+pes15:
+  teams_config_path: teams_lists/15.yaml
+  ocr_regions:
+    p1_league_text:
+    - 175
+    - 415
+    - 855
+    - 465
+    p1_team_select_text:
+    - 175
+    - 415
+    - 855
+    - 465
+pes17:
+  teams_config_path: teams_lists/17.yaml
+  ocr_regions:
+    p1_league_text:
+    - 175
+    - 415
+    - 855
+    - 465
+    p1_team_select_text:
+    - 175
+    - 415
+    - 855
+    - 465
+pes19:
+  teams_config_path: teams_lists/19.yaml
+  ocr_regions:
+    p1_league_text:
+    - 175
+    - 415
+    - 855
+    - 465
+    p1_team_select_text:
+    - 175
+    - 415
+    - 855
+    - 465
+pes21:
+  teams_config_path: teams_lists/21.yaml
+  ocr_regions:
+    p1_league_text:
+    - 175
+    - 415
+    - 855
+    - 465
+    p1_team_select_text:
+    - 175
+    - 415
+    - 855
+    - 465

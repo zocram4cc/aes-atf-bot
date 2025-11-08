@@ -1,0 +1,143 @@
+"4chan Cup Main":
+  - name: "/3/"
+    selectable: false
+  - name: "/a/"
+    selectable: true
+  - name: "/aco/"
+    selectable: true
+  - name: "/adv/"
+    selectable: true
+  - name: "/an/"
+    selectable: true
+  - name: "/asp/"
+    selectable: false
+  - name: "/b/"
+    selectable: true
+  - name: "/bant/"
+    selectable: true
+  - name: "/biz/"
+    selectable: true
+  - name: "/c/"
+    selectable: true
+  - name: "/cgl/"
+    selectable: false
+  - name: "/ck/"
+    selectable: true
+  - name: "/cm/"
+    selectable: true
+  - name: "/co/"
+    selectable: true
+  - name: "/d/"
+    selectable: true
+  - name: "/diy/"
+    selectable: false
+  - name: "/e/"
+    selectable: false
+  - name: "/f/"
+    selectable: true
+  - name: "/fa/"
+    selectable: true
+  - name: "/fit/"
+    selectable: true
+  - name: "/g/"
+    selectable: true
+  - name: "/gd/"
+    selectable: true
+  - name: "/gif/"
+    selectable: false
+  - name: "/h/"
+    selectable: true
+  - name: "/his/"
+    selectable: true
+  - name: "/hm/"
+    selectable: false
+  - name: "/i/"
+    selectable: true
+  - name: "/ic/"
+    selectable: false
+  - name: "/int/"
+    selectable: true
+  - name: "/jp/"
+    selectable: true
+  - name: "/k/"
+    selectable: true
+  - name: "/lgbt/"
+    selectable: true
+  - name: "/lit/"
+    selectable: true
+  - name: "/m/"
+    selectable: true
+  - name: "/mlp/"
+    selectable: true
+  - name: "/mu/"
+    selectable: true
+  - name: "/n/"
+    selectable: true
+  - name: "/o/"
+    selectable: true
+  - name: "/out/"
+    selectable: true
+  - name: "/p/"
+    selectable: false
+  - name: "/po/"
+    selectable: false
+  - name: "/pol/"
+    selectable: true
+  - name: "/pw/"
+    selectable: true
+  - name: "/r9k/"
+    selectable: true
+  - name: "/s/"
+    selectable: false
+  - name: "/s4s/"
+    selectable: true
+  - name: "/sci/"
+    selectable: true
+  - name: "/soc/"
+    selectable: false
+  - name: "/sp/"
+    selectable: true
+  - name: "/t/"
+    selectable: true
+  - name: "/tg/"
+    selectable: true
+  - name: "/toy/"
+    selectable: true
+  - name: "/trv/"
+    selectable: true
+  - name: "/tv/"
+    selectable: true
+  - name: "/u/"
+    selectable: true
+  - name: "/v/"
+    selectable: true
+  - name: "/vg/"
+    selectable: true
+  - name: "/vm/"
+    selectable: true
+  - name: "/vmg/"
+    selectable: true
+  - name: "/vp/"
+    selectable: true
+  - name: "/vr/"
+    selectable: true
+  - name: "/vrpg/"
+    selectable: true
+  - name: "/vst/"
+    selectable: true
+  - name: "/vt/"
+    selectable: true
+  - name: "/w/"
+    selectable: false
+  - name: "/wg/"
+    selectable: true
+  - name: "/wsg/"
+    selectable: true
+  - name: "/x/"
+    selectable: true
+  - name: "/xs/"
+    selectable: true
+  - name: "/y/"
+    selectable: true
+"Invitational": []
+"/vg/ League": []
