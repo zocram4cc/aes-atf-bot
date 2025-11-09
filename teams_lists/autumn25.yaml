@@ -9,7 +9,7 @@
   selectable: true
   id: 703
 - name: /adv/
-  selectable: true
+  selectable: false
   id: 704
 - name: /an/
   selectable: true
@@ -24,7 +24,7 @@
   selectable: true
   id: 708
 - name: /biz/
-  selectable: true
+  selectable: false
   id: 709
 - name: /c/
   selectable: true
@@ -33,10 +33,10 @@
   selectable: false
   id: 711
 - name: /ck/
-  selectable: true
+  selectable: false
   id: 712
 - name: /cm/
-  selectable: true
+  selectable: false
   id: 713
 - name: /co/
   selectable: true
@@ -51,13 +51,13 @@
   selectable: false
   id: 717
 - name: /f/
-  selectable: true
+  selectable: false
   id: 718
 - name: /fa/
-  selectable: true
+  selectable: false
   id: 719
 - name: /fit/
-  selectable: true
+  selectable: false
   id: 720
 - name: /g/
   selectable: true
@@ -72,13 +72,13 @@
   selectable: true
   id: 724
 - name: /his/
-  selectable: true
+  selectable: false
   id: 725
 - name: /hm/
   selectable: false
   id: 726
 - name: /i/
-  selectable: true
+  selectable: false
   id: 728
 - name: /ic/
   selectable: false
@@ -114,7 +114,7 @@
   selectable: true
   id: 739
 - name: /out/
-  selectable: true
+  selectable: false
   id: 740
 - name: /p/
   selectable: false
@@ -123,13 +123,13 @@
   selectable: false
   id: 742
 - name: /pol/
-  selectable: true
+  selectable: false
   id: 743
 - name: /pw/
-  selectable: true
+  selectable: false
   id: 744
 - name: /r9k/
-  selectable: true
+  selectable: false
   id: 745
 - name: /s/
   selectable: false
@@ -144,34 +144,34 @@
   selectable: false
   id: 749
 - name: /sp/
-  selectable: true
+  selectable: false
   id: 750
 - name: /t/
   selectable: true
   id: 751
 - name: /tg/
-  selectable: true
+  selectable: false
   id: 752
 - name: /toy/
   selectable: true
   id: 753
 - name: /trv/
-  selectable: true
+  selectable: false
   id: 754
 - name: /tv/
-  selectable: true
+  selectable: false
   id: 755
 - name: /u/
   selectable: true
   id: 756
 - name: /v/
-  selectable: true
+  selectable: false
   id: 757
 - name: /vg/
   selectable: true
   id: 758
 - name: /vm/
-  selectable: true
+  selectable: false
   id: 759
 - name: /vmg/
   selectable: true
@@ -183,13 +183,13 @@
   selectable: true
   id: 762
 - name: /vrpg/
-  selectable: true
+  selectable: false
   id: 763
 - name: /vst/
   selectable: true
   id: 764
 - name: /vt/
-  selectable: true
+  selectable: false
   id: 765
 - name: /w/
   selectable: false
@@ -198,10 +198,10 @@
   selectable: true
   id: 767
 - name: /wsg/
-  selectable: true
+  selectable: false
   id: 768
 - name: /x/
-  selectable: true
+  selectable: false
   id: 769
 - name: /xs/
   selectable: true

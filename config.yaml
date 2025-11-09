@@ -1,4 +1,3 @@
-version: pes15
 obs:
   host: localhost
   port: 4455
@@ -9,15 +8,20 @@ ocr_corrections:
     - g
     - l
     - k
-    's':
+    s:
     - '5'
-    'o':
+    o:
     - '0'
-    'i':
+    i:
     - '1'
     - l
+  slash_like_characters:
+  - f
+  - l
+  - i
+  - '}'
+  - '1'
 pes15:
-  teams_config_path: teams_lists/15.yaml
   ocr_regions:
     p1_league_text:
     - 175
@@ -30,7 +34,6 @@ pes15:
     - 855
     - 465
 pes17:
-  teams_config_path: teams_lists/17.yaml
   ocr_regions:
     p1_league_text:
     - 175
@@ -43,28 +46,26 @@ pes17:
     - 855
     - 465
 pes19:
-  teams_config_path: teams_lists/19.yaml
   ocr_regions:
     p1_league_text:
-    - 175
-    - 415
-    - 855
-    - 465
+    - 177
+    - 375
+    - 815
+    - 460
     p1_team_select_text:
-    - 175
-    - 415
-    - 855
-    - 465
+    - 177
+    - 375
+    - 815
+    - 460
 pes21:
-  teams_config_path: teams_lists/21.yaml
   ocr_regions:
     p1_league_text:
-    - 175
-    - 415
-    - 855
-    - 465
+    - 172
+    - 372
+    - 815
+    - 460
     p1_team_select_text:
-    - 175
-    - 415
-    - 855
-    - 465
+    - 172
+    - 372
+    - 815
+    - 460

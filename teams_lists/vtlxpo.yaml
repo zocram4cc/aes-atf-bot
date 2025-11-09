@@ -1,213 +1,213 @@
 4chan Cup Main:
 - name: /3/
-  selectable: true
+  selectable: false
   id: 701
 - name: /a/
-  selectable: true
+  selectable: false
   id: 702
 - name: /aco/
-  selectable: true
+  selectable: false
   id: 703
 - name: /adv/
-  selectable: true
+  selectable: false
   id: 704
 - name: /an/
-  selectable: true
+  selectable: false
   id: 705
 - name: /asp/
-  selectable: true
+  selectable: false
   id: 706
 - name: /b/
-  selectable: true
+  selectable: false
   id: 707
 - name: /bant/
-  selectable: true
+  selectable: false
   id: 708
 - name: /biz/
-  selectable: true
+  selectable: false
   id: 709
 - name: /c/
-  selectable: true
+  selectable: false
   id: 710
 - name: /cgl/
-  selectable: true
+  selectable: false
   id: 711
 - name: /ck/
-  selectable: true
+  selectable: false
   id: 712
 - name: /cm/
-  selectable: true
+  selectable: false
   id: 713
 - name: /co/
-  selectable: true
+  selectable: false
   id: 714
 - name: /d/
-  selectable: true
+  selectable: false
   id: 715
 - name: /diy/
-  selectable: true
+  selectable: false
   id: 716
 - name: /e/
-  selectable: true
+  selectable: false
   id: 717
 - name: /f/
-  selectable: true
+  selectable: false
   id: 718
 - name: /fa/
-  selectable: true
+  selectable: false
   id: 719
 - name: /fit/
-  selectable: true
+  selectable: false
   id: 720
 - name: /g/
-  selectable: true
+  selectable: false
   id: 721
 - name: /gd/
-  selectable: true
+  selectable: false
   id: 722
 - name: /gif/
   selectable: false
   id: 723
 - name: /h/
-  selectable: true
+  selectable: false
   id: 724
 - name: /his/
-  selectable: true
+  selectable: false
   id: 725
 - name: /hm/
   selectable: false
   id: 726
 - name: /i/
-  selectable: true
+  selectable: false
   id: 728
 - name: /ic/
   selectable: false
   id: 729
 - name: /int/
-  selectable: true
+  selectable: false
   id: 730
 - name: /jp/
-  selectable: true
+  selectable: false
   id: 731
 - name: /k/
-  selectable: true
+  selectable: false
   id: 732
 - name: /lgbt/
-  selectable: true
+  selectable: false
   id: 733
 - name: /lit/
-  selectable: true
+  selectable: false
   id: 734
 - name: /m/
-  selectable: true
+  selectable: false
   id: 735
 - name: /mlp/
-  selectable: true
+  selectable: false
   id: 736
 - name: /mu/
-  selectable: true
+  selectable: false
   id: 737
 - name: /n/
-  selectable: true
+  selectable: false
   id: 738
 - name: /o/
-  selectable: true
+  selectable: false
   id: 739
 - name: /out/
-  selectable: true
+  selectable: false
   id: 740
 - name: /p/
-  selectable: true
+  selectable: false
   id: 741
 - name: /po/
-  selectable: true
+  selectable: false
   id: 742
 - name: /pol/
-  selectable: true
+  selectable: false
   id: 743
 - name: /pw/
-  selectable: true
+  selectable: false
   id: 769
 - name: /r9k/
-  selectable: true
+  selectable: false
   id: 744
 - name: /s/
-  selectable: true
+  selectable: false
   id: 745
 - name: /s4s/
-  selectable: true
+  selectable: false
   id: 746
 - name: /sci/
-  selectable: true
+  selectable: false
   id: 747
 - name: /soc/
-  selectable: true
+  selectable: false
   id: 748
 - name: /sp/
-  selectable: true
+  selectable: false
   id: 749
 - name: /t/
-  selectable: true
+  selectable: false
   id: 750
 - name: /tg/
   selectable: false
   id: 751
 - name: /toy/
-  selectable: true
+  selectable: false
   id: 752
 - name: /trv/
-  selectable: true
+  selectable: false
   id: 753
 - name: /tv/
-  selectable: true
+  selectable: false
   id: 754
 - name: /u/
-  selectable: true
+  selectable: false
   id: 755
 - name: /v/
-  selectable: true
+  selectable: false
   id: 756
 - name: /vg/
-  selectable: true
+  selectable: false
   id: 757
 - name: /vm/
-  selectable: true
+  selectable: false
   id: 765
 - name: /vp/
-  selectable: true
+  selectable: false
   id: 758
 - name: /vr/
-  selectable: true
+  selectable: false
   id: 759
 - name: /vrpg/
-  selectable: true
+  selectable: false
   id: 766
 - name: /vst/
-  selectable: true
+  selectable: false
   id: 767
 - name: /vt/
-  selectable: true
+  selectable: false
   id: 768
 - name: /w/
-  selectable: true
+  selectable: false
   id: 760
 - name: /wg/
-  selectable: true
+  selectable: false
   id: 761
 - name: /wsg/
-  selectable: true
+  selectable: false
   id: 762
 - name: /x/
-  selectable: true
+  selectable: false
   id: 763
 - name: /xs/
-  selectable: true
+  selectable: false
   id: 770
 - name: /y/
-  selectable: true
+  selectable: false
   id: 764
 Invitational Teams:
-- name: Invitational 1
+- name: /4CCringe/
   id: 841
   selectable: false
 - name: Invitational 2
@@ -342,66 +342,66 @@ Invitational Teams:
 - name: Invitational 45
   id: 885
   selectable: false
-- name: Invitational 46
+- name: /AllYouCanDrink/
   id: 886
-  selectable: false
-- name: Invitational 47
+  selectable: true
+- name: /warcraft/
   id: 887
-  selectable: false
-- name: Invitational 48
+  selectable: true
+- name: /brave/
   id: 888
-  selectable: false
-- name: Invitational 49
+  selectable: true
+- name: /K-9/
   id: 889
-  selectable: false
-- name: Invitational 50
+  selectable: true
+- name: /pcsplit/
   id: 890
-  selectable: false
-- name: Invitational 51
+  selectable: true
+- name: /sauce/
   id: 891
-  selectable: false
-- name: Invitational 52
+  selectable: true
+- name: /merge/
   id: 892
-  selectable: false
-- name: Invitational 53
+  selectable: true
+- name: /XxX/
   id: 893
-  selectable: false
-- name: Invitational 54
+  selectable: true
+- name: /OKFAMSNPLB/
   id: 894
-  selectable: false
-- name: Invitational 55
+  selectable: true
+- name: /Sperm/
   id: 895
-  selectable: false
-- name: Invitational 56
+  selectable: true
+- name: /plague/
   id: 896
-  selectable: false
-- name: Invitational 57
+  selectable: true
+- name: /bitflip/
   id: 897
-  selectable: false
-- name: Invitational 58
+  selectable: true
+- name: /vintage/
   id: 898
-  selectable: false
-- name: Invitational 59
+  selectable: true
+- name: /consortseternal/
   id: 899
-  selectable: false
-- name: Invitational 60
+  selectable: true
+- name: /global/
   id: 900
-  selectable: false
-- name: Invitational 61
+  selectable: true
+- name: /theyare/
   id: 901
-  selectable: false
-- name: Invitational 62
+  selectable: true
+- name: /HERE/
   id: 902
-  selectable: false
-- name: Invitational 63
+  selectable: true
+- name: "/kissaten/"
   id: 903
-  selectable: false
-- name: Invitational 64
+  selectable: true
+- name: /redtomorrow/
   id: 904
-  selectable: false
-- name: Invitational 65
+  selectable: true
+- name: /roundsperminute/
   id: 905
-  selectable: false
+  selectable: true
 - name: Invitational 66
   id: 906
   selectable: false
