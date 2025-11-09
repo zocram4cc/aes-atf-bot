@@ -36,15 +36,15 @@ pes15:
 pes17:
   ocr_regions:
     p1_league_text:
-    - 175
-    - 415
-    - 855
-    - 465
+    - 177
+    - 375
+    - 815
+    - 460
     p1_team_select_text:
-    - 175
-    - 415
-    - 855
-    - 465
+    - 177
+    - 375
+    - 815
+    - 460
 pes19:
   ocr_regions:
     p1_league_text:

@@ -80,6 +80,17 @@ async def main():
             await press_key(GAMEPAD, vg.XUSB_BUTTON.XUSB_GAMEPAD_A, 0.2)
             logging.info("Waiting for 5 seconds...")
             await asyncio.sleep(5)
+        if args.version == "pes17":
+            await asyncio.sleep(0.6)
+            await press_left_analog(GAMEPAD, 'LEFT')
+            await asyncio.sleep(0.6)
+            await press_left_analog(GAMEPAD, 'LEFT')
+            await asyncio.sleep(0.6)
+            await press_left_analog(GAMEPAD, 'UP')
+            await asyncio.sleep(0.6)
+            await press_key(GAMEPAD, vg.XUSB_BUTTON.XUSB_GAMEPAD_A, 0.2)
+            logging.info("Waiting for 5 seconds...")
+            await asyncio.sleep(5)
         if args.version == "pes21":
             for _ in range(3):
                 await press_left_analog(GAMEPAD, 'RIGHT')
@@ -138,7 +149,7 @@ async def main():
                 global LAST_SCREENSHOT
                 LAST_SCREENSHOT = None
 
-                for i in range(1):
+                for i in range(23):
                     await asyncio.sleep(1.5)
                     logging.info(f"Processing player {i+1}/23 for team {team_name}")
 
@@ -181,7 +192,7 @@ async def main():
                     if args.version == "pes15":
                         GAMEPAD.left_trigger_float(1.0)
                         GAMEPAD.update()
-                    if args.version == "pes21":
+                    if args.version == "pes17" or args.version == "pes21":
                         GAMEPAD.right_joystick_float(x_value_float=1.0, y_value_float=0.0)
                         GAMEPAD.update()
                     await asyncio.sleep(0.25)
@@ -249,7 +260,7 @@ async def main():
         await asyncio.sleep(2)
         await press_key(GAMEPAD, vg.XUSB_BUTTON.XUSB_GAMEPAD_B, 0.2)
         await asyncio.sleep(0.5)
-        if args.version == "pes15":
+        if args.version == "pes15" or args.version == "pes17":
             await press_key(GAMEPAD, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_LEFT)
         if args.version == "pes21":
             await press_key(GAMEPAD, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_RIGHT)
@@ -258,6 +269,10 @@ async def main():
         await asyncio.sleep(6)
         if args.version == "pes15": # to return to initial mainmenu
             await press_key(GAMEPAD, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_RIGHT) 
+        if args.version == "pes17": # to return to initial mainmenu
+            for _ in range(2):
+                await asyncio.sleep(0.5)
+                await press_left_analog(GAMEPAD, 'RIGHT')
         if args.version == "pes21":
             for _ in range(3):
                 await press_left_analog(GAMEPAD, 'LEFT')
