@@ -88,15 +88,15 @@ async def select_league(obs, gamepad, ocr_reader, ocr_regions, config, leagues, 
                 if current_index < target_index:
                     logging.info(f"LEAGUE_SELECT: Current '{p1_current_league}' is before '{target_league}', pressing DOWN.")
                     state.player_last_direction = 'DOWN'
-                    await press_left_analog(gamepad, 'DOWN', 0.2)
+                    await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2) # fix for Vigem windows users
                 else:
                     logging.info(f"LEAGUE_SELECT: Current '{p1_current_league}' is after '{target_league}', pressing UP.")
                     state.player_last_direction = 'UP'
-                    await press_left_analog(gamepad, 'UP', 0.2)
+                    await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_UP, 0.2) # fix for Vigem windows users
             except ValueError:
                 logging.error(f"League '{target_league}' or '{p1_current_league}' not in list. Skipping.")
                 state.player_last_direction = 'DOWN'
-                await press_left_analog(gamepad, 'DOWN', 0.2)
+                await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2) # fix for Vigem windows users
 
 async def select_team(obs, gamepad, ocr_reader, ocr_regions, config, all_teams, desired_team, state):
     logging.info(f"Starting team selection for '{desired_team}'.")
@@ -144,12 +144,12 @@ async def select_team(obs, gamepad, ocr_reader, ocr_regions, config, all_teams, 
                 if current_index < target_index:
                     logging.info(f"TEAM_SELECT: Navigating DOWN for '{desired_team}'. Current: '{current_team}'.")
                     state.player_last_direction = 'DOWN'
-                    await press_left_analog(gamepad, 'DOWN', 0.2)
+                     await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2) # fix for Vigem windows users
                 else: # current_index > target_index
                     logging.info(f"TEAM_SELECT: Navigating UP for '{desired_team}'. Current: '{current_team}'.")
                     state.player_last_direction = 'UP'
-                    await press_left_analog(gamepad, 'UP', 0.2)
+                     await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_UP, 0.2) # fix for Vigem windows users
             except ValueError:
                 logging.error(f"Team '{desired_team_name}' or '{current_team}' not in list. Defaulting to DOWN.")
                 state.player_last_direction = 'DOWN'
-                await press_left_analog(gamepad, 'DOWN', 0.2)
+                await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2) # fix for Vigem windows users

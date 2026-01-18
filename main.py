@@ -152,12 +152,13 @@ async def main():
                 for i in range(23):
                     await asyncio.sleep(1.5)
                     logging.info(f"Processing player {i+1}/23 for team {team_name}")
-
                     if not check_process_running("PES20"):
                         logging.error("Game process 'PES20**.exe' not found. Exiting.")
                         sys.exit(1)
 
                     await asyncio.sleep(1/10)
+                    if i == 0:
+                        await asyncio.sleep(1)
                     frame = OBS.get_frame()
                     if frame is None:
                         logging.error("Could not get frame from OBS. Exiting.")
@@ -185,7 +186,7 @@ async def main():
                     await press_key(GAMEPAD, vg.XUSB_BUTTON.XUSB_GAMEPAD_A, 0.2)
                     await asyncio.sleep(0.2)
                     for _ in range(7):
-                        await press_left_analog(GAMEPAD, 'DOWN', 0.14)
+                        await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.16) #fix for vigem windows users
                         await asyncio.sleep(0.15)
                     await press_key(GAMEPAD, vg.XUSB_BUTTON.XUSB_GAMEPAD_A, 0.2)
                     await asyncio.sleep(1)
@@ -245,7 +246,7 @@ async def main():
                     await asyncio.sleep(0.7)
                     await press_key(GAMEPAD, vg.XUSB_BUTTON.XUSB_GAMEPAD_B, 0.25)
                     await asyncio.sleep(0.7)
-                    await press_left_analog(GAMEPAD, 'DOWN')
+                    await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2)
                     await asyncio.sleep(0.2)
 
                 logging.info(f"Team {team_name} is OK.")
