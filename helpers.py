@@ -73,8 +73,11 @@ async def select_league(obs, gamepad, ocr_reader, ocr_regions, config, leagues, 
         p1_current_league = fuzzy_match(p1_league_text, leagues, config)
 
         if p1_current_league is None:
-            logging.warning(f"LEAGUE_SELECT: Could not match OCR text '{p1_league_text}'. Repeating last action: {state.player_last_direction}.")
-            await press_left_analog(gamepad, state.player_last_direction, 0.2)
+            logging.warning(f"TEAM_SELECT: Could not match OCR text '{p1_league_text}'. Repeating last action: {state.player_last_direction}.")
+            if state.player_last_direction == 'UP':
+                await press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_UP, 0.2)
+            else:
+                await press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2)
             continue
 
         if p1_current_league == target_league:
@@ -126,7 +129,10 @@ async def select_team(obs, gamepad, ocr_reader, ocr_regions, config, all_teams, 
 
         if current_team is None:
             logging.warning(f"TEAM_SELECT: Could not match OCR text '{player1_text}'. Repeating last action: {state.player_last_direction}.")
-            await press_left_analog(gamepad, state.player_last_direction, 0.2)
+            if state.player_last_direction == 'UP':
+                await press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_UP, 0.2)
+            else:
+                await press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2)
             continue
         
         logging.debug(f"TEAM_SELECT OCR: '{player1_text}' -> Matched: '{current_team}'")
@@ -144,12 +150,12 @@ async def select_team(obs, gamepad, ocr_reader, ocr_regions, config, all_teams, 
                 if current_index < target_index:
                     logging.info(f"TEAM_SELECT: Navigating DOWN for '{desired_team}'. Current: '{current_team}'.")
                     state.player_last_direction = 'DOWN'
-                    await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2) # fix for Vigem windows users
+                    await press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2) # fix for Vigem windows users
                 else: # current_index > target_index
                     logging.info(f"TEAM_SELECT: Navigating UP for '{desired_team}'. Current: '{current_team}'.")
                     state.player_last_direction = 'UP'
-                    await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_UP, 0.2) # fix for Vigem windows users
+                    await press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_UP, 0.2) # fix for Vigem windows users
             except ValueError:
                 logging.error(f"Team '{desired_team_name}' or '{current_team}' not in list. Defaulting to DOWN.")
                 state.player_last_direction = 'DOWN'
-                await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2) # fix for Vigem windows users
+                await press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2) # fix for Vigem windows users
