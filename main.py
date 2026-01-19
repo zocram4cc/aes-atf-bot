@@ -186,7 +186,7 @@ async def main():
                     await press_key(GAMEPAD, vg.XUSB_BUTTON.XUSB_GAMEPAD_A, 0.2)
                     await asyncio.sleep(0.2)
                     for _ in range(7):
-                        await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.16) #fix for vigem windows users
+                        await press_key(GAMEPAD, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.16) #fix for vigem windows users
                         await asyncio.sleep(0.15)
                     await press_key(GAMEPAD, vg.XUSB_BUTTON.XUSB_GAMEPAD_A, 0.2)
                     await asyncio.sleep(1)
@@ -246,7 +246,7 @@ async def main():
                     await asyncio.sleep(0.7)
                     await press_key(GAMEPAD, vg.XUSB_BUTTON.XUSB_GAMEPAD_B, 0.25)
                     await asyncio.sleep(0.7)
-                    await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2)
+                    await press_key(GAMEPAD, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2)
                     await asyncio.sleep(0.2)
 
                 logging.info(f"Team {team_name} is OK.")

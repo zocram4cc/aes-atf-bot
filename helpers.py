@@ -144,11 +144,11 @@ async def select_team(obs, gamepad, ocr_reader, ocr_regions, config, all_teams, 
                 if current_index < target_index:
                     logging.info(f"TEAM_SELECT: Navigating DOWN for '{desired_team}'. Current: '{current_team}'.")
                     state.player_last_direction = 'DOWN'
-                     await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2) # fix for Vigem windows users
+                    await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_DOWN, 0.2) # fix for Vigem windows users
                 else: # current_index > target_index
                     logging.info(f"TEAM_SELECT: Navigating UP for '{desired_team}'. Current: '{current_team}'.")
                     state.player_last_direction = 'UP'
-                     await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_UP, 0.2) # fix for Vigem windows users
+                    await self.press_key(gamepad, vg.XUSB_BUTTON.XUSB_GAMEPAD_DPAD_UP, 0.2) # fix for Vigem windows users
             except ValueError:
                 logging.error(f"Team '{desired_team_name}' or '{current_team}' not in list. Defaulting to DOWN.")
                 state.player_last_direction = 'DOWN'
