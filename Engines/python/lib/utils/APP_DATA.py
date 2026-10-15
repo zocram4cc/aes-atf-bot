@@ -1,0 +1,6 @@
+APP_OWNER = "the4chancup"
+APP_NAME = "4cc-aes-atf-bot"
+APP_VERSION_MAJOR = 1
+APP_VERSION_MINOR = 0
+APP_VERSION_PATCH = 0
+APP_VERSION_DEV = False

@@ -1,2 +1,5 @@
 *.pyc
 screenshots/*
+Engines/embed/
+Engines/state/
+crash.log
